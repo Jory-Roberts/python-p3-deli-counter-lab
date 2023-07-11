@@ -19,7 +19,3 @@ def now_serving(que):
   else:
    name = que.pop(0)
    print(f"Currently serving {name}.")
-
-
-
-  pass
