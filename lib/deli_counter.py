@@ -7,8 +7,19 @@ def line(que):
     print(message)
 
 
-def take_a_number():
-  pass
+def take_a_number(que, name):
+  position = len(que) + 1
+  que.append(name)
+  print(f"Welcome, {name}. You are number {position} in line.")
 
-def now_serving():
+
+def now_serving(que):
+  if(len(que) == 0) :
+    print("There is nobody waiting to be served!")
+  else:
+   name = que.pop(0)
+   print(f"Currently serving {name}.")
+
+
+
   pass
